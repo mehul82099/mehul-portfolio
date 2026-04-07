@@ -1,0 +1,9 @@
+@echo off
+echo Installing virtualenv...
+python -m venv venv
+echo Activating virtual environment...
+call venv\Scripts\activate.bat
+echo Installing dependencies...
+pip install airllm
+echo Setup complete. You can now run example_airllm.py with python example_airllm.py
+pause

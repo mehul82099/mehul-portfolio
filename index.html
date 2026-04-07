@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehul Jhabak - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts for Massive Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Syne for intense headings, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Noise Background Overlay -->
+    <div class="noise"></div>
+
+    <!-- Smooth Scroll Wrapper -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- INTRO / HERO SECTION -->
+            <section class="hero panel">
+                <!-- Parallax Layering System -->
+                <div class="parallax-layer bg-text">
+                    <h1 class="hero-title">MEHUL</h1>
+                </div>
+                
+                <div class="parallax-layer char-image">
+                    <img src="mehul_transparent-removebg-preview.png" alt="Mehul Jhabak" class="hero-character">
+                </div>
+
+                <div class="parallax-layer fg-text">
+                    <h1 class="hero-title outline-text">JHABAK</h1>
+                </div>
+
+                <!-- Hero Info overlaid -->
+                <div class="hero-overlay">
+                    <p class="hero-subtext">FULL STACK DEVELOPER & AI AUTOMATION</p>
+                    <div class="hero-footer">
+                        <span>Jaipur, Rajasthan</span>
+                        <span>Scroll <br> To Discover</span>
+                        <span>Mehuljhabak10@gmail.com</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SUMMARY -->
+            <section class="about panel">
+                <div class="container">
+                    <h2 class="section-title">THE ARCHITECT</h2>
+                    <p class="large-text">
+                        Result-oriented Full Stack Developer and Automation Architect building complex, real-world systems. Bridging traditional logic and modern AI.
+                    </p>
+                    
+                    <div class="skills-wrapper">
+                        <div class="skill-pill">Geolocation Algorithms</div>
+                        <div class="skill-pill">n8n Automation</div>
+                        <div class="skill-pill">Voice AI (Vapi, Bland)</div>
+                        <div class="skill-pill">Real-time State Sync</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HORIZONTAL SCROLL PROJECTS SECTION -->
+            <section class="projects-pin-wrapper panel">
+                <div class="horizontal-scroll-container">
+                    
+                    <div class="horizontal-panel title-panel">
+                        <h2>KEY<br>PROJECTS</h2>
+                        <span class="scroll-instruction">Keep Scrolling ➔</span>
+                    </div>
+
+                    <div class="horizontal-panel card-panel">
+                        <div class="card">
+                            <h3>01 / Safe Ride</h3>
+                            <p class="subtitle">Hyper-Local School Transport Platform</p>
+                            <ul>
+                                <li>Dynamic routing engine (3km radius).</li>
+                                <li>Biometric face scanning at pickup.</li>
+                                <li>Live real-time location tracking for parents.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-panel card-panel">
+                        <div class="card">
+                            <h3>02 / Medical ERP</h3>
+                            <p class="subtitle">Chat-to-Database Automated System</p>
+                            <ul>
+                                <li>n8n webhooks processing natural language.</li>
+                                <li>Real-time inventory updates via custom JS nodes.</li>
+                                <li>Reduced order processing time by 70%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-panel card-panel">
+                        <div class="card">
+                            <h3>03 / Voice AI</h3>
+                            <p class="subtitle">Low-Latency Receptionist</p>
+                            <ul>
+                                <li>Sub-2-second response via async parsing.</li>
+                                <li>Vapi.ai + Twilio stack.</li>
+                                <li>Filters out 100% of Tier-1 support calls.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- OUTRO / FOOTER -->
+            <section class="footer panel">
+                <div class="container text-center">
+                    <h1 class="footer-title">LET'S BUILD.</h1>
+                    <a href="mailto:Mehuljhabak10@gmail.com" class="mega-link">Get In Touch</a>
+                    <p class="footer-copy">© 2026 Mehul Jhabak. Self-Directed Engineering.</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smoothing -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>
