@@ -44,7 +44,7 @@ export default function ScrollyCanvas({ children }: { children?: React.ReactNode
             className="relative z-10 w-full h-[90vh] flex items-end justify-center pointer-events-none transform-style-3d origin-bottom"
         >
             <img 
-                src="/mehul_transparent-removebg-preview.png" 
+                src="/mehul-portfolio/mehul_transparent-removebg-preview.png" 
                 alt="Mehul Hero" 
                 className="w-auto h-full object-contain filter drop-shadow-[0_-20px_50px_rgba(230,81,0,0.4)]"
             />
