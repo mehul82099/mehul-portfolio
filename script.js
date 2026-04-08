@@ -73,13 +73,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }, 0);
 
   // Animate character image with 3D rotation and movement
-  gsap.set('.char-image', { transformOrigin: "bottom center", transformPerspective: 1000 });
-  heroParallaxTimeline.fromTo('.char-image', 
-      { rotationY: -35, rotationZ: -8, x: 0, y: 0 }, // Face turned left, body still
+  gsap.set('.hero__character', { transformOrigin: "bottom center", transformPerspective: 1000 });
+  heroParallaxTimeline.fromTo('.hero__character', 
+      { rotationY: -45, rotationZ: -5, x: 0, y: 0, scale: 1 }, // Face heavily turned left
       { 
-          rotationY: 35,     // Face turns right, creating a left-to-right 3D head shift
-          rotationZ: 8,      // Slight lean for realistic movement
-          y: -150,           // Necessary vertical shift for 3D depth parallax
+          rotationY: 45,     // Face heavily turns right
+          rotationZ: 5,      
+          y: -150,           // Vertical shift for 3D depth parallax
           scale: 1.15, 
       }, 
   0);
