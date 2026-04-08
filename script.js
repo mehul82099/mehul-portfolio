@@ -36,6 +36,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
       duration: 0.3,
       ease: "power2.out"
     });
+
+    // 3D Face Rotation Tracking (Makes character look at cursor)
+    const character = document.querySelector('.hero__character');
+    if (character) {
+        // Calculate mouse position relative to center of screen
+        const xAxis = (window.innerWidth / 2 - e.pageX) / 20; 
+        const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+        
+        gsap.to(character, {
+            rotationY: -xAxis, 
+            rotationX: yAxis,
+            rotationZ: xAxis / 5, // Slight tilt
+            ease: "power2.out",
+            duration: 0.4,
+            transformPerspective: 1000,
+            transformOrigin: "center center"
+        });
+    }
   });
 
   // Add hover effects for interactive elements
@@ -72,13 +90,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     opacity: 0.5 
   }, 0);
 
-  // Animate character image with 3D rotation and movement
-  gsap.set('.hero__character', { transformOrigin: "bottom center", transformPerspective: 1000 });
+  // Animate character image with upward parallax depth (rotation is now handled by mousemove)
   heroParallaxTimeline.fromTo('.hero__character', 
-      { rotationY: -45, rotationZ: -5, x: 0, y: 0, scale: 1 }, // Face heavily turned left
+      { y: 0, scale: 1 }, 
       { 
-          rotationY: 45,     // Face heavily turns right
-          rotationZ: 5,      
           y: -150,           // Vertical shift for 3D depth parallax
           scale: 1.15, 
       }, 
@@ -147,6 +162,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.ticker.remove();
   });
 });
-
-// Export for module usage (if needed)
-export { };
